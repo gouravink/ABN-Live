@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Karla-Regular';
+  src: local('Karla-Regular'), url(./Assets/fonts/Karla-Regular.ttf) format('truetype');
+}
+body {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+code {
+  font-family: 'Karla', sans-serif;
+}
