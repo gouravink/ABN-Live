@@ -1,0 +1,91 @@
+.inp {
+    position: relative;
+    margin: auto;
+    width: 100%;
+}
+
+.inp .label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    font-size: 16px;
+    color: #f5f5f5;
+    font-weight: 500;
+    transform-origin: 0 0;
+    transition: all 0.2s ease;
+}
+
+.inp .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #07f;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all 0.15s ease;
+}
+
+.inp input {
+    -webkit-appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: inherit;
+    padding: 12px 0;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid #C42532;
+    background: none;
+    border-radius: 0;
+    color: #f5f5f5;
+    transition: all 0.15s ease;
+    background: transparent;
+}
+
+.inp input:hover {
+    background: rgba(34, 50, 84, 0.03);
+}
+
+.inp input:not(:placeholder-shown)+span {
+    color: #C42532;
+    transform: translateY(-26px) scale(0.75);
+}
+
+.inp input:focus {
+    background: none;
+    outline: none;
+}
+
+.inp input:focus+span {
+    color: #c8ccd4;
+    transform: translateY(-26px) scale(0.75);
+}
+
+.inp input:focus+span+.border {
+    transform: scaleX(1);
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);     
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .inp input[type=email], .inp input[type=password]{
+    animation: 0.5s ease-in-out 0s 1 slideInFromLeft;
+  }
+  .inp .label {
+    animation: 0.5s ease-in-out 0s 1 slideInFromRight;
+  }

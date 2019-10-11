@@ -1,0 +1,28 @@
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 9999;
+}
+.footer-body{
+    /* background: #2A2A2B; */
+    /* background: rgba(0, 0, 0, 0.6); */
+
+    background: #000;
+}
+.footer-body img{
+    max-width: 18%;
+}
+.footer-body p{
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #c1bebe;
+}
+@media screen and (min-device-width: 320px) and (max-device-height: 800px) and (orientation: landscape) {
+    /* footer{ 
+        position: relative;
+    } */
+    .footer-body img{
+        max-width: 10%;
+    }
+}
