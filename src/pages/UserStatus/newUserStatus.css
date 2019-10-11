@@ -1,0 +1,50 @@
+.not-valid{
+    text-decoration: none;
+}
+.red {
+    color: #C42532 !important;
+}
+.userStatus-body{
+    /* position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+} 
+.userStatus-body p.success-msg{
+    color: rgb(255, 255, 255);
+    background-color: rgba(61, 61, 61, 0.5);
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 0px 1rem 1.5rem rgba(0,0,0,0.5);
+    border-radius: 2%;
+    padding: 1.5rem;
+    text-align: center;
+    color: #a0a0a0;
+}
+.userStatus-body p small{ padding: 1rem;}
+/* Media Query Landscape Mode */
+@media screen and (min-device-width: 320px) and (max-device-height: 800px) and (orientation: landscape) {
+    .userStatus-body{
+        /* position: absolute;
+        left: 0;
+        right: 0;
+        top: 20%; */
+        position: absolute;
+        left: 50%;
+        top: 67%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        margin-bottom: 4rem;
+    } 
+    .userStatus-body .password-info{
+        position: relative;
+    }
+  }

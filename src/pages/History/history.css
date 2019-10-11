@@ -1,0 +1,13 @@
+.listview-body::after{
+    display: none;
+}
+/* .history-body .listview-body{
+    max-height: 100%;
+} */
+
+.history-body .listview-body p.his-title{
+    padding: 5px 0px 0px 0px;
+}
+.history-body .tab-hor{
+    margin-top: 1em;
+}

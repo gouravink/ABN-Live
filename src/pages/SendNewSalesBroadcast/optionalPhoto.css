@@ -1,0 +1,77 @@
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 20px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  .optPhoto-btn{
+    padding: 3rem 0rem 3rem 0rem;
+  }
+  .optionalimg{
+    margin: 0 auto;
+  }
+.oprtionalPhoto-wrapper .optionalPhoto{
+    box-shadow:none;
+    background-color: #C42532;
+    border-radius: 7px;
+    color: #fff;
+    padding: 8px;
+    width: 72%;
+    border: none;
+    font-size: 12px;
+    -webkit-appearance: listitem;
+    -moz-appearance: listitem;
+    appearance: listitem;
+    outline: none;
+    animation: 0.7s ease-in-out 0s 1 fadeInUp;
+    padding: 1em 1em;
+    margin: 1em 0em;
+    margin: 0 auto;
+  }
+  .optionalPhoto{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .optionalPhoto p{
+    font-size: 12px;
+    text-align: center;
+  }
+  .oprtionalPhoto-wrapper label{
+    padding: 10px;
+    background: transparent;
+    display: table;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+  .oprtionalPhoto-wrapper input[type="file"] {
+      display: none;
+  }
+  .oprtionalPhoto-wrapper .showImg{
+    width: 90%;
+    /* height: 800px; */
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .oprtionalPhoto-wrapper img{
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+    max-width: 80%;
+    /* max-height: 500px; */
+    border:5px solid #efefef;
+    background: #efefef;
+    margin-bottom: 1rem;
+  }
+  .oprtionalPhoto-wrapper .choose-photo{
+    padding: 3rem 0rem 1rem 0rem;
+  }

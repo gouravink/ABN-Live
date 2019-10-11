@@ -1,0 +1,70 @@
+.select-vehicle .tab-wrapper{
+  width: 100% !important;
+  height: 720px !important;
+  position: relative;
+}
+.select-vehicle .box-1,.select-vehicle .box-2,.select-vehicle .box-3,.select-vehicle .box-4 {
+  position: relative;
+}
+.select-vehicle .car-image img{
+  max-width: 160px;
+  height: auto;
+}
+.ddList{
+  padding: 2em 0em;
+}
+@keyframes car-jump { 
+        0%   { transform: translateY(0); }
+        10%  { transform: translateY(0); }
+        30%  { transform: translateY(-30px); }
+        50%  { transform: translateY(0); }
+        57%  { transform: translateY(-7px); }
+        64%  { transform: translateY(0); }
+        100% { transform: translateY(0); }
+}
+.select-vehicle .car-image img{ 
+    animation: car-jump 2.5s ease-in-out infinite forwards;
+    -webkit-animation: car-jump 2.5s ease-in-out infinite forwards;
+    -moz-animation: car-jump 2.5s ease-in-out infinite forwards;
+    -o-animation: car-jump 2.5s ease-in-out infinite forwards;
+}
+.tab-wrapper{
+  height: 100% !important;
+}
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.42857;
+  border-radius: 50%;
+  background: #C42532;
+  color: #fff;
+  border: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.select-vehicle .inp-pre-owned{
+  width: 76%;
+}
+.select-vehicle .inp-pre-owned .label,.select-vehicle .inp-pre-owned input{
+  font-size: 12px !important;
+}
+.select-vehicle .inp-pre-owned-col{
+  text-align: center;
+}
+.select-vehicle .inp-pre-owned .effect-20{
+  border: 1px solid #ccc; 
+  padding: 7px 14px; 
+  transition: 0.4s; 
+  background: transparent;
+}
+.select-vehicle .carCount{
+    box-shadow: 0 0px 7px #777;
+    padding: 5px 0px;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    margin: 0 auto;
+}

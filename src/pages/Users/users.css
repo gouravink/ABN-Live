@@ -1,0 +1,42 @@
+.users-body{
+    margin-top: 2em;
+}
+.users-body .listview-body {
+    max-height: 50px;
+    margin-bottom: 20px;
+}
+
+.users-body .listview-body .listview-arrow{
+    top: 6px;
+}
+.users-body .list-data::after{
+    content: "";
+    width: 100%;
+    height: 5px;
+    margin-left: -29px;
+    position: absolute;
+    top: 41%;
+    left: 29px;
+    border: 14px solid rgba(61, 61, 61, 0.5);;
+    border-left: 107px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 15px solid transparent;
+    border-radius: 7px;
+}
+.users-body .listview-body p{
+    padding: 1rem;
+    margin-top:0px;
+}
+
+.users-body .listview-body .listview-arrow {
+    float: right;
+    text-align: center;
+    margin: 0 AUTO;
+    position: absolute;
+    top: 0;
+    /* left: 83%; */
+    right: -3%;
+    bottom: 0;
+    color: #C42532;
+    top: 19%;
+}

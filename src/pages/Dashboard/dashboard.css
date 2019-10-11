@@ -1,0 +1,152 @@
+ #dashboard-body {
+  /* overflow-x: hidden;
+  position: absolute;
+  width: 100%;
+  top: 19%; */
+
+  /* position: fixed;
+  width: 100%;
+  top: 20%; */
+  padding: 3rem 0rem 5rem 0rem;
+} 
+
+#dashboard-body .text-center {
+  z-index: 9999;
+}
+#dashboard-body .icon img{
+  max-width: 50px;
+}
+#dashboard-body .menu-txt p{
+  font-size: 12px;
+}
+#dashboard-body .icon{
+  text-align: center;
+}
+.dash-item {
+  color: #fff;
+  border-radius: 4px;
+  opacity: 0.8;
+  z-index: 9999;
+  padding: 6% 0%;
+  background: rgb(196, 37, 50);
+}
+
+.animate-one, .animate-three{
+  transform: translateX(-100%)
+}
+.animate-two, .animate-four{
+  transform: translateX(100%)
+}
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-one{
+  animation: slideInFromLeft 0.7s ease-in-out 0s 1 forwards;
+  -webkit-animation: slideInFromLeft 0.7s ease-in-out 0s 1 forwards;
+  -moz-animation: slideInFromLeft 0.7s ease-in-out 0s 1 forwards;
+  -o-animation: slideInFromLeft 0.7s ease-in-out 0s 1 forwards;
+}
+.animate-two {
+  -webkit-animation: slideInFromRight 0.7s ease-in-out 0.3s 1 forwards;
+  -moz-animation: slideInFromRight 0.7s ease-in-out 0.3s 1 forwards;
+  -o-animation: slideInFromRight 0.7s ease-in-out 0.3s 1 forwards;
+  animation: slideInFromRight 0.7s ease-in-out 0.3s 1 forwards;
+}
+.animate-three {
+  animation: slideInFromLeft 0.7s ease-in-out 0.6s 1 forwards;
+  -webkit-animation: slideInFromLeft 0.7s ease-in-out 0.6s 1 forwards;
+  -moz-animation: slideInFromLeft 0.7s ease-in-out 0.6s 1 forwards;
+  -o-animation: slideInFromLeft 0.7s ease-in-out 0.6s 1 forwards;
+  
+}
+.animate-four {
+  -webkit-animation: slideInFromRight 0.7s ease-in-out 0.9s 1 forwards;
+  -moz-animation: slideInFromRight 0.7s ease-in-out 0.9s 1 forwards;
+  -o-animation: slideInFromRight 0.7s ease-in-out 0.9s 1 forwards;
+  animation: slideInFromRight 0.7s ease-in-out 0.9s 1 forwards;
+ 
+}
+
+@media screen and (min-device-width: 320px) and (max-device-height: 800px) and (orientation: landscape) {
+  #dashboard-body {
+    position: relative;
+  }
+  #dashboard-body .icon{
+    text-align: center;
+  }
+  #dashboard-body .menu-txt p{
+    font-size: 18px;
+  }
+  #dashboard-body .icon img{
+    max-width: 100%;
+  }
+}
+/*IPhone 6/7/8 */
+/* @media screen and (device-width : 375px) and (device-height : 676px){
+  #dashboard-body{    
+    padding: 4rem 0rem 6rem 0rem;
+ }
+} */
+
+/*IPhone X */
+@media only screen and (device-width : 375px) and (device-height : 812px){
+  #dashboard-body{    
+    padding: 5rem 0rem 5rem 0rem;
+ }  
+  .dash-item{
+      padding: 10% 0%;
+    }
+    #dashboard-body .menu-txt p{
+      font-size: 14px;
+    }
+    #dashboard-body .icon img {
+      max-width: 60px;
+  }
+}
+
+/* Pixals 2XL*/
+@media screen and (min-width: 411px) and (max-width: 767px) { 
+  #dashboard-body{    
+    padding: 4rem 0rem 4rem 0rem;
+ }
+  .dash-item{
+    padding: 7% 0%;
+  }
+  #dashboard-body .menu-txt p{
+    font-size: 16px;
+  }
+  #dashboard-body .icon img {
+    max-width: 60px;
+  }
+}
+/* Pixals 2XL*/
+@media screen and (device-width: 411px) and (device-height: 823px) { 
+  #dashboard-body{    
+    padding: 6rem 0rem 6rem 0rem;
+ }
+}
+
+@media screen 
+and (min-width: 320px) 
+and (max-width: 359px){
+  #dashboard-body{    
+    padding: 2rem 0rem 2rem 0rem;
+ }
+}

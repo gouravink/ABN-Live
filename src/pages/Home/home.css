@@ -1,0 +1,63 @@
+.home .for-pass:active {
+  outline: none;
+}
+.home-area{
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+}
+/* --------------------------------------------------- */
+.home-body{
+bottom: 0;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+}
+.logo {
+  box-shadow: 0 0 0 rgba(196, 37, 50, 0.4);
+  animation: pulse 2s infinite;
+  border-radius: 50%;
+}
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(196, 37, 50, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(196, 37, 50, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(196, 37, 50, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(196, 37, 50, 0.4);
+    box-shadow: 0 0 0 0 rgba(196, 37, 50, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(196, 37, 50, 0);
+      box-shadow: 0 0 0 10px rgba(1196, 37, 50, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(196, 37, 50, 0);
+      box-shadow: 0 0 0 0 rgba(196, 37, 50, 0);
+  }
+}
+
+
+/* Media Query Landscape Mode
+@media screen and (min-device-width: 320px) and (max-device-height: 800px) and (orientation: landscape) {
+  .home-body{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 20%;
+  }
+} */
