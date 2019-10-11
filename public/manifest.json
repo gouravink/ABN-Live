@@ -1,0 +1,41 @@
+{
+  "short_name": "ABN Live",
+  "name": "ABN Live",
+  "description": "WE ARE AUTOMOTIVE BROADCASTING NETWORK",
+  "icons": [
+      {
+        "src": "logo-abn-128x128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+    },
+    {
+        "src": "logo-abn-144x144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+    },
+    {
+      "src": "logo-abn-152x152.png",
+      "sizes": "152x152.png",
+      "type": "image/png"
+  },
+  {
+      "src": "logo-abn-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+  },
+  {
+    "src": "logo-abn-256x256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+},
+{
+    "src": "logo-abn-512x512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+}
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#C42532",
+  "background_color": "#C42532"
+}
